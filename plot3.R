@@ -37,7 +37,7 @@ hpcData$Sub_metering_3 <- as.numeric(hpcData$Sub_metering_3)
 datetime <- paste(as.Date(hpcData$Date), hpcData$Time)
 hpcData$Datetime <- as.POSIXct(datetime)
 
-#generate plot based on new dattime column. Type L 
+#generate plot based on new dattime column.
 with(hpcData, 
 {
   plot(Sub_metering_1~Datetime, type="l", ylab="Global Active Power (kilowatts)", xlab="")
